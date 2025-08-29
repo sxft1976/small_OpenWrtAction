@@ -827,6 +827,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.MY_SECRET_PAT }}
-          repository: smallprogram/MyAction
+          repository: sxft1976/MyAction
           event-type: openwrt_compilation_completed
       
