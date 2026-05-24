@@ -579,7 +579,7 @@ jobs:
           df -hT
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
-          IMAGE_NAME="ghcr.io/smallprogram/openwrt-base-cache-$PLATFORM_NAME:latest"
+          IMAGE_NAME="ghcr.io/sxft1976/openwrt-base-cache-$PLATFORM_NAME:latest"
 
           docker build -t $IMAGE_NAME .
           docker push $IMAGE_NAME
